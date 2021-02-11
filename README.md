@@ -13,20 +13,22 @@ JSON-LDで記述した画像アノテーション、もしくはIIIFプレゼン
 
 ## Simple usage
 
-The following is the head element of this page. Please download files with hyperlink from this site, along with OpenSeadragon and Annotorious. You can put those files anywhere in your site. Image path option for OpenSeadragon (prefixUrl) should be defined in Mia.prep_osd.osdoption within imgannot.js (button icons for Annotorious should be placed there).
+The following is a sample head element to use image-annotator. Please download files with hyperlink from this site, along with OpenSeadragon and Annotorious. You can put those files anywhere in your site. Image path option for OpenSeadragon (prefixUrl) should be defined in Mia.prep_osd.osdoption within imgannot.js (button icons for Annotorious should be placed there).
 
-```<link rel="stylesheet" href="/lib/js/annot/annotorious.css" />
-<link rel="stylesheet" href="/works/2016/pub/imgannot.css" />
+```
+<link rel="stylesheet" href="/lib/js/annot/annotorious.css" />
+<link rel="stylesheet" href="/lib/js/my/imgannot.css" />
 <script src="/lib/js/osd/openseadragon.js"></script>
 <script src="/lib/js/annot/annotorious.min.js"></script>
 <script src="/lib/js/my/annotext.js"></script>
 <script src="/lib/js/my/webannotorious.js"></script>
-<script src="/works/2016/pub/imgannot.js"></script>
+<script src="/lib/js/my/imgannot.js"></script>
 ```
 
 Place div element with id="openseadragon" in anywhere within body element. Mia.setup() will display manifest / web annotation / images given by u parameter.
 
-```<body onload="Mia.setup();">
+```
+<body onload="Mia.setup();">
 <div id="openseadragon"></div>
 </body>
 ```
